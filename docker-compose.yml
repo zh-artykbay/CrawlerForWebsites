@@ -14,7 +14,5 @@ services:
     image: postgres
     volumes:
       - ./data/db:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_DB=viqnddcf
-      - POSTGRES_USER=viqnddcf
-      - POSTGRES_PASSWORD=AbCyiNwQq0gASW6KV4CvIdrKCvebtZLD
+    env_file:
+      - env
